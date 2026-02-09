@@ -22,3 +22,55 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+.floaty {
+  position: absolute;
+  font-size: 28px;
+  color: rgba(244, 114, 182, 0.8);
+  animation: floatUp 6s ease-in-out infinite;
+}
+
+.floaty.delay-1 {
+  animation-delay: 0.8s;
+}
+
+.floaty.delay-2 {
+  animation-delay: 1.6s;
+}
+
+.floaty.delay-3 {
+  animation-delay: 2.4s;
+}
+
+.floaty.delay-4 {
+  animation-delay: 3.2s;
+}
+
+.floaty.delay-5 {
+  animation-delay: 4s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-18px) scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(244, 114, 182, 0.4);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  color: #be123c;
+  box-shadow: 0 6px 18px rgba(244, 114, 182, 0.15);
+}
