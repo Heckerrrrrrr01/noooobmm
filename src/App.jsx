@@ -52,7 +52,7 @@ export default function Page() {
   };
 
   return (
-    <div className="relative overflow-hidden flex flex-col items-center justify-center pt-6 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
+    <div className="relative min-h-screen flex flex-col items-center justify-start py-6 selection:bg-rose-600 selection:text-white text-zinc-900">
       <div className="fixed inset-0 bg-gradient-to-b from-rose-100 via-pink-100 to-amber-50 opacity-80" />
       <FloatingHearts />
       {yesPressed ? (
@@ -78,12 +78,12 @@ export default function Page() {
             src={lovesvg2}
             className="fixed bottom-16 -z-10 animate-pulse md:right-24 right-10 md:w-40 w-32"
           />
-          <div className="relative z-10 w-full max-w-3xl px-4 flex flex-col items-center">
+          <div className="relative z-10 w-full max-w-3xl px-4 pb-12 flex flex-col items-center">
             <img
-              className="h-[230px] rounded-2xl shadow-lg ring-4 ring-white/80"
+              className="h-[180px] sm:h-[230px] rounded-2xl shadow-lg ring-4 ring-white/80"
               src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.webp"
             />
-            <h1 className="text-4xl md:text-6xl my-4 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl my-4 text-center">
               Will you be my Valentine?
             </h1>
             <p className="text-center text-base md:text-lg bg-white/70 backdrop-blur px-4 py-2 rounded-full shadow-sm">
