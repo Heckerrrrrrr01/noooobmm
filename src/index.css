@@ -18,7 +18,7 @@
 }
 body {
   background: #1a0a1e;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* ── Animated gradient background ── */

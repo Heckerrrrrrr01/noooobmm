@@ -94,7 +94,7 @@ export default function Page() {
   };
 
   return (
-    <div className="relative overflow-hidden flex flex-col items-center justify-center pt-6 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
+    <div className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen py-6 selection:bg-rose-600 selection:text-white text-zinc-900">
       <div className="animated-bg" />
       <AnimatedBackground />
       <FloatingHearts />
